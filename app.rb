@@ -11,7 +11,7 @@ post '/messages' do
   Faraday.post do |req|
     req.url ENV['SLACK_ENDPOINT']
     req.headers['Content-Type'] = 'application/json'
-    req.body = { username: "Twilio", icon_emoji: "twilio", text: message}.to_json
+    req.body = { username: "Twilio", icon_emoji: ENV['SLACK_EMOJI'], text: message}.to_json
   end
 
   content_type 'text/xml'
