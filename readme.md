@@ -1,4 +1,4 @@
-# Twilio -> Slack Bridge
+# Twilio to Slack Bridge
 
 2FA can be a real pain when a distributed team needs to share a device (it happens).
 
